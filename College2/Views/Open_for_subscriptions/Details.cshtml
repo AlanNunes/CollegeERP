@@ -1,0 +1,66 @@
+﻿@model College2.Models.open_for_subscriptions
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>open_for_subscriptions</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cities.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cities.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cours.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cours.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.limitSubscriptions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.limitSubscriptions)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
